@@ -1,0 +1,520 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Custom Colors */
+:root {
+    --mikasa-blue: #1133A1;          /* Azul Primario */
+    --mikasa-yellow: #FFD200;        /* Amarillo de Acento */
+    --mikasa-white: #FFFFFF;         /* Blanco Panel */
+    --mikasa-gray-bg: #f4f6f9;       /* Gris Pista */
+    --mikasa-dark-text: #0B1E5B;     /* Azul Profundo para Textos */
+    --mikasa-dark-footer: #07133b;   /* Azul para Footer */
+}
+
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scroll Settings*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh; /* Deja un respiro superior para que el h2 no quede tapado por el header */
+}
+
+/* General Font Styles */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--mikasa-dark-text);
+    background-color: var(--mikasa-gray-bg);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* --------- Header / Nav --------- */
+header {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--mikasa-dark-text);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#nav-logo img {
+    height: 70%;
+    width: auto;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Burguer Icon */
+.nav-toggle {
+    display: none;
+    color: var(--mikasa-yellow);
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: var(--mikasa-yellow);
+}
+
+nav ul li a:hover {
+    color: var(--mikasa-white);
+    text-decoration: underline;
+}
+
+/* --------- Hero / Vídeo --------- */
+#landing-video {
+    margin-top: 10vh;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--mikasa-white);
+}
+
+#landing-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* --------- General Sections --------- */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.section-p{
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+/* --------- Cards  --------- */
+.card-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card, .card-academy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    background-color: var(--mikasa-white);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .card-academy:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+.card-icons {
+    font-size: 3rem;
+    color: var(--mikasa-yellow);
+    margin-bottom: 0.5rem;
+}
+
+.card img, .card-academy img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.card-academy img {
+    border-radius: 0;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+}
+
+.card-academy-icon {
+    color: var(--mikasa-blue);
+    margin-right: 0.5rem;
+}
+
+/* --------- Table Prices --------- */
+#tarifas {
+    background-color: var(--mikasa-gray-bg);
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--mikasa-white);
+    text-align: left;
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 1.2rem 1.5rem;
+}
+
+.pricing-table thead {
+    background-color: var(--mikasa-dark-text);
+    color: var(--mikasa-yellow);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.pricing-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+.pricing-table tbody tr:hover {
+    background-color: rgba(255, 210, 0, 0.15);
+}
+
+.pricing-table td strong {
+    color: var(--mikasa-blue);
+}
+
+/* --------- Gallery --------- */
+.gallery-p {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.gallery-img {
+    width: 250px;
+    height: 200px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.08);
+}
+
+/* --------- Contact --------- */
+#contacto {
+    background-color: #518ab8;
+    color: var(--mikasa-white);
+}
+
+#contacto h2 {
+    color: var(--mikasa-white);
+}
+
+#contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.textarea-field {
+    height: 120px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+#submit {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    background-color: var(--mikasa-yellow);
+    color: var(--mikasa-dark-text);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+#submit:hover {
+    background-color: var(--mikasa-dark-text);
+    color: var(--mikasa-white);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.contact-info .card-academy-icon {
+    color: var(--mikasa-yellow);
+    font-size: 1.3rem;
+}
+
+/* --------- Footer --------- */
+.site-footer {
+    background-color: var(--mikasa-dark-footer);
+    color: var(--mikasa-white);
+    padding: 3rem 2rem 1.5rem 2rem;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.footer-brand h3 {
+    color: var(--mikasa-yellow);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    color: var(--mikasa-white);
+    max-width: 350px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--mikasa-white);
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    background-color: var(--mikasa-yellow);
+    color: var(--mikasa-dark-text);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+/* --------- Media Queris --------- */
+@media screen and (max-width: 768px) {
+    
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .card, .card-academy {
+    width: 500px;
+    }
+    .card img, .card-academy img {
+        height: 260px;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .pricing-table th, .pricing-table td {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+    .gallery-img {
+    width: 500px;
+    height: 450px;
+}
+    
+}

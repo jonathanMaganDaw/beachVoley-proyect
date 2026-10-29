@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>BeachVoley</title>
+    <link rel="shortcut icon" href="img/ball.ico" type="image/x-icon" />
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/59256b2ab7.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="nav-logo">
+            <img src="img/logo.png" alt="Logotipo BeachVoley" />
+        </a>
+        <nav aria-label="Navegación principal">
+            <!-- Burguer Icon -->
+            <div class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul id="nav-menu">
+                <li><a href="#pasion">Pasión</a></li>
+                <li><a href="#academia">Academia</a></li>
+                <li><a href="#tarifas">Tarifas</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Vídeo -->
+    <section id="landing-video">
+        <video autoplay muted loop playsinline poster="imagen-de-cararga.jpg">
+            <source src="media/background-video.webm" type="video/webm" />
+            Tu navegador no soporta el formato de vídeo HTML5.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <h1>Bienvenido a BeachVoley</h1>
+            <p>Siente la emoción del vóley playa</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Pasion -->
+        <section id="pasion">
+            <h2>Nuestra Pasión</h2>
+            <div class="card-container">
+                <article class="card">
+                    <i class="fa-solid fa-volleyball card-icons" aria-hidden="true"></i>
+                    <h3>Aprende de Expertos</h3>
+                    <p>
+                        Entrena con entrenadores certificados y lleva tu nivel de juego al siguiente paso en instalaciones de primera.
+                    </p>
+                    <img src="img/card-1.png" alt="Entrenamiento de vóley playa con instructor" />
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-trophy card-icons" aria-hidden="true"></i>
+                    <h3>Compite en Torneos</h3>
+                    <p>
+                        Participa en ligas locales y torneos de fin de semana adaptados a todos los niveles de competición.
+                    </p>
+                    <img src="img/card-3.png" alt="Trofeo de torneo de vóley playa" />
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-users card-icons" aria-hidden="true"></i>
+                    <h3>Comunidad Vibrante</h3>
+                    <p>
+                        Súmate a nuestro club, conoce a nuevos compañeros de juego y disfruta del ambiente dentro y fuera de la pista.
+                    </p>
+                    <img src="img/card-2.png" alt="Grupo de jugadores sonriendo en la playa" />
+                </article>
+            </div>
+        </section>
+
+        <!-- Academy -->
+        <section id="academia">
+            <h2>Academia de Formación</h2>
+            <div class="card-container">
+                <article class="card-academy">
+                    <img src="img/card-academy-1.png" alt="Jugadores principiantes aprendiendo saque" />
+                    <div class="card-text">
+                        <h3>Principiante</h3>
+                        <p>
+                            Aprende la técnica básica de pase, colocación y saques desde cero con una metodología amigable.
+                        </p>
+                        <span><i class="fa-solid fa-volleyball card-academy-icon"></i> 2 sesiones / semana</span>
+                        <span><i class="fa-solid fa-user-group card-academy-icon"></i> Grupos reducidos</span>
+                    </div>
+                </article>
+                <article class="card-academy">
+                    <img src="img/card-academy-2.png" alt="Jugadores de nivel intermedio en un remate" />
+                    <div class="card-text">
+                        <h3>Intermedio</h3>
+                        <p>
+                            Perfecciona tus desplazamientos en la arena, tácticas de ataque y bloqueo efectivo en pareja.
+                        </p>
+                        <span><i class="fa-solid fa-volleyball card-academy-icon"></i> 3 sesiones / semana</span>
+                        <span><i class="fa-solid fa-chart-line card-academy-icon"></i> Análisis táctico</span>
+                    </div>
+                </article>
+                <article class="card-academy">
+                    <img src="img/card-academy-3.png" alt="Jugador avanzado en entrenamiento intensivo" />
+                    <div class="card-text">
+                        <h3>Avanzado</h3>
+                        <p>
+                            Preparación física específica, estrategia de competición y alto rendimiento en la arena.
+                        </p>
+                        <span><i class="fa-solid fa-volleyball card-academy-icon"></i> Entrenamiento diario</span>
+                        <span><i class="fa-solid fa-medal card-academy-icon"></i> Circuito competitivo</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Table Prices -->
+        <section id="tarifas">
+            <h2>Horarios y Tarifas</h2>
+            <p class="section-p">Consulta nuestros planes de entrenamiento y disponibilidad de pistas para organizar tus partidos.</p>
+            <div class="table">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Nivel / Servicio</th>
+                            <th>Días</th>
+                            <th>Horario</th>
+                            <th>Precio Mensual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Principiante</strong></td>
+                            <td>Lunes y Miércoles</td>
+                            <td>17:00 - 18:30</td>
+                            <td>45 € / mes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Intermedio</strong></td>
+                            <td>Martes y Jueves</td>
+                            <td>18:30 - 20:00</td>
+                            <td>55 € / mes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Avanzado</strong></td>
+                            <td>Lunes a Jueves</td>
+                            <td>20:00 - 22:00</td>
+                            <td>75 € / mes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alquiler Pista Libre</strong></td>
+                            <td>Viernes a Domingo</td>
+                            <td>09:00 - 21:00</td>
+                            <td>15 € / hora</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <p class="gallery-p">
+                Explora los mejores momentos de nuestros entrenamientos, torneos y eventos especiales en la playa.
+            </p>
+            <div class="gallery-container">
+                <div class="gallery-img"><img src="img/gall-1.png" alt="Galería 1 - Partido en la playa" /></div>
+                <div class="gallery-img"><img src="img/gall-2.png" alt="Galería 2 - Jugador realizando un remate" /></div>
+                <div class="gallery-img"><img src="img/gall-3.png" alt="Galería 3 - Equipo festejando punto" /></div>
+                <div class="gallery-img"><img src="img/gall-4.png" alt="Galería 4 - Vista aérea de la pista" /></div>
+                <div class="gallery-img"><img src="img/gall-5.png" alt="Galería 5 - Entrenamiento matutino" /></div>
+                <div class="gallery-img"><img src="img/gall-6.png" alt="Galería 6 - Entrega de trofeos" /></div>
+                <div class="gallery-img"><img src="img/gall-7.png" alt="Galería 7 - Partido en la playa" /></div>
+                <div class="gallery-img"><img src="img/gall-8.png" alt="Galería 8 - Jugador realizando un remate" /></div>
+                <div class="gallery-img"><img src="img/gall-9.png" alt="Galería 9 - Equipo festejando punto" /></div>
+                <div class="gallery-img"><img src="img/gall-10.png" alt="Galería 10 - Vista aérea de la pista" /></div>
+                <div class="gallery-img"><img src="img/gall-11.png" alt="Galería 11 - Entrenamiento matutino" /></div>
+                <div class="gallery-img"><img src="img/gall-12.png" alt="Galería 12 - Entrega de trofeos" /></div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contacto">
+            <h2>Contacto y Ubicación</h2>
+            <div id="contact-content">
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input class="input-field" type="text" id="name" name="name" placeholder="Tu nombre" required />
+                        </div>
+                        <div class="form-group">
+                            <input class="input-field" type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="input-field textarea-field" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" id="submit">Enviar Mensaje</button>
+                </form>
+
+                <div class="contact-info">
+                    <p><span><i class="fa-solid fa-location-dot card-academy-icon"></i> Playa de Las Canteras, Pista 3</span></p>
+                    <p><span><i class="fa-solid fa-phone card-academy-icon"></i> +34 600 000 000</span></p>
+                    <p><span><i class="fa-solid fa-envelope card-academy-icon"></i> info@beachvoley.com</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>BeachVoley</h3>
+                <p>Tu club y academia de vóley playa de referencia. Pasión, deporte y comunidad bajo el sol.</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BeachVoley. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
