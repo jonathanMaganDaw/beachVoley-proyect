@@ -205,7 +205,7 @@ section {
     justify-content: space-between;
     border-radius: 1rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    width: 320px;
+    width: 300px;
     background-color: var(--mikasa-white);
     overflow: hidden;
     text-align: left;
@@ -308,12 +308,12 @@ section {
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 90%;
 }
 
 .gallery-img {
-    width: 250px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -484,8 +484,14 @@ form {
 }
 
 /* --------- Media Queris --------- */
+@media screen and (max-width: 1024px) {
+
+.card-3 {
+    width: 632px;
+}
+}
+
 @media screen and (max-width: 768px) {
-    
     .nav-toggle {
         display: block;
     }
@@ -497,6 +503,7 @@ form {
     .card, .card-academy {
     width: 500px;
     }
+
     .card img, .card-academy img {
         height: 260px;
     }
@@ -515,6 +522,5 @@ form {
     .gallery-img {
     width: 500px;
     height: 450px;
-}
-    
+}   
 }
