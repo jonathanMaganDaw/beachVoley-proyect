@@ -1,74 +1,75 @@
 # BeachVoley 🏐
 
-Sitio web dinámico y moderno para el club y academia de vóley playa **BeachVoley**. La plataforma permite a los usuarios conocer las actividades del club, consultar la academia de formación, revisar las tarifas y horarios disponibles, explorar la galería de fotos y contactar directamente con el equipo a través de un formulario accesible y adaptable.
+A dynamic and modern website for the **BeachVoley** beach volleyball club and academy. The platform allows users to discover club activities, explore training programs, check rates and schedules, browse the photo gallery, and reach out directly through an accessible and responsive contact form.
 
 ---
 
-## Comenzando 🚀
+## Getting Started 🚀
 
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Mira **Despliegue** para conocer cómo desplegar el proyecto en un servidor web o servicio de hosting en la nube.
+See **Deployment** to learn how to deploy the project to a web server or cloud hosting service.
 
-### Pre-requisitos 📋
+### Prerequisites 📋
 
-Para ejecutar este proyecto en tu entorno local solo necesitas un navegador web moderno y, opcionalmente, un servidor local ligero para pruebas.
+To run this project locally, all you need is a modern web browser and, optionally, a lightweight local server for testing.
 
-* **Navegador Web:** Google Chrome, Mozilla Firefox, Microsoft Edge o Safari (versiones recientes).
-* **Servidor local (Opcional):** [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (Extensión de VS Code) o Python para levantar un servidor HTTP.
+- **Web Browser:** Recent versions of Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari.
+- **Local Server (Optional):** [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (VS Code extension) or Python to launch a local HTTP server.
 
-### Instalación 🔧
+### Installation 🔧
 
-Sigue estos pasos para clonar el repositorio y ejecutar el proyecto localmente:
+Follow these steps to clone the repository and run the project locally:
 
-1. **Clona el repositorio en tu máquina local:**
+1. **Clone the repository to your local machine:**
    ```bash
    git clone https://github.com/jonathanMaganDaw/beachVoley-proyect.git
    ```
 
-2. **Accede al directorio del proyecto:**
+2. **Navigate to the project directory:**
    ```bash
    cd beachVoley-proyect
    ```
 
-3. **Abre el proyecto:**
-   * **Opción A (Directa):** Haz doble clic en el archivo `index.html` para abrirlo en tu navegador.
-   * **Opción B (Servidor local con VS Code):** Abre la carpeta en VS Code y haz clic en **"Go Live"** con la extensión *Live Server*.
-   * **Opción C (Servidor local con Python):**
+3. **Open the project:**
+   * **Option A (Direct):** Double-click the `index.html` file to open it in your browser.
+   * **Option B (Local Server with VS Code):** Open the folder in VS Code and click **"Go Live"** using the *Live Server* extension.
+   * **Option C (Local Server with Python):**
      ```bash
      python -m http.server 8000
      ```
-     Luego navega a `http://localhost:8000` en tu navegador.
+     Then navigate to `http://localhost:8000` in your web browser.
 
 ---
 
-## Recursos e Inspiración 🛠️
+## Resources and Inspiration 🛠️
 
-Para el diseño y maquetación de este proyecto se tomaron las siguientes referencias visuales e ideales de estructura:
+The design and layout of this project were inspired by the following visual references and structural ideas:
 
-* **Hero Section (Vídeo de portada):** Inspirado en el diseño impactante de [PLD Space](https://www.pldspace.com/es/).
-* **Distribución general y Layout:** Tomado como referencia de estructura base y modernizado desde [Ruta del Agua](https://ruta-del-agua.vercel.app/).
-
----
-
-## Tecnologías Utilizadas 💻
-
-* **HTML5:** Estructura semántica del contenido.
-* **CSS3:** Flexbox, Grid layout, variables CSS y diseño responsivo sin dependencias de JS.
-* **Normalize.css:** Reseteo de estilos para consistencia entre navegadores.
-* **FontAwesome:** Iconografía vectorial.
-* **Google Fonts:** Tipografías *Bebas Neue* y *Roboto*.
+- **Hero Section (Background Video):** Inspired by the high-impact design of [PLD Space](https://www.pldspace.com/es/).
+- **General Layout and Structure:** Adapted and modernized from [Ruta del Agua](https://ruta-del-agua.vercel.app/).
 
 ---
 
-## Autor ✒️
+## Built With 💻
 
-* **Jonathan Magán** - *Desarrollo e Implementación* - [jonathanMaganDaw](https://github.com/jonathanMaganDaw)
+- **HTML5:** Semantic content structure.
+- **CSS3:** Flexbox, Grid layout, CSS variables, and fully responsive design without JavaScript dependencies.
+- **Normalize.css:** Cross-browser style resets for visual consistency.
+- **FontAwesome:** Vector iconography.
+- **Google Fonts:** *Bebas Neue* and *Roboto* typography.
 
 ---
 
-## Expresiones de Gratitud 🙏
+## Author ✒️
 
-* A los proyectos de referencia por servir de inspiración en la distribución y el apartado visual.
-* A la comunidad del vóley playa por ser la principal motivación tras este proyecto 🏐.
-* ¡Gracias por visitar el repositorio! Si te ha gustado, no dudes en darle una estrella ⭐️.
+- **Jonathan Magán**
+- *Development & Implementation* — [jonathanMaganDaw](https://github.com/jonathanMaganDaw)
+
+---
+
+## Acknowledgments 🙏
+
+- Special thanks to the reference projects for providing visual and structural inspiration.
+- Gratitude to the beach volleyball community for being the primary motivation behind this project 🏐.
+- Thank you for visiting the repository! If you enjoyed this project, feel free to give it a star ⭐️.
